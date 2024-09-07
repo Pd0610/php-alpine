@@ -4,8 +4,7 @@ LABEL Pradeep Subedi
 
 RUN apk update && apk add libzip-dev icu-dev autoconf build-base
 
-RUN docker-php-ext-install iconv \
-            pcntl \
+RUN docker-php-ext-install pcntl \
             intl \
             zip \
             pdo_mysql \
